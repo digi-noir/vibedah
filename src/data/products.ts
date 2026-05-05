@@ -56,7 +56,7 @@ export const Coolers: Cooler[] = [
     socket: 'AM4, AM5, LGA1700, LGA1200, LGA1150, LGA1151, LGA1155, LGA2066, LGA2011',
     description: 'Powerful and compact',
     price: 79.99, stock: 18,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FCORSAIRH60X.jpg?alt=media&token=dbeb5ca2-5aca-4c0a-9376-e4553ca4f30a',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769844/CORSAIRH60X_rq0pog.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -65,7 +65,7 @@ export const Coolers: Cooler[] = [
     socket: 'LGA2066, LGA2011-v3, LGA1700, LGA1200, LGA1156, LGA1155, AM4, AM3+, AM3',
     description: 'AIO cooler with a small light show!',
     price: 93.99, stock: 5,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FMSIM240RV2.jpg?alt=media&token=97cad378-10cf-4fc2-b39b-8a405988841d',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769846/MSIM240RV2_cny838.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -74,7 +74,7 @@ export const Coolers: Cooler[] = [
     socket: 'AM4, AM5, LGA1700, LGA1200, LGA1150, LGA1151, LGA1155, LGA2011, LGA2066, sTRX4',
     description: 'The best that money can buy!',
     price: 299.99, stock: 31,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FH150i.jpg?alt=media&token=00821d54-e628-46e8-b0bd-62b0f8dd9a7e',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769845/H150i_dbbwxb.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -83,7 +83,7 @@ export const Coolers: Cooler[] = [
     socket: 'LGA2066, LGA1700, LGA1200, LGA1155, LGA1150, AM4, AM3+, AM3, AM2+, FM2, FM1',
     description: 'AIO cooler with a light show!',
     price: 101.99, stock: 27,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FTH360.jpg?alt=media&token=4dee902d-6af7-46de-b247-fa154bdd8d3b',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769850/TH360_osxyay.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -92,7 +92,7 @@ export const Coolers: Cooler[] = [
     socket: 'LGA2066, LGA1700, LGA1200, LGA1155, LGA1150, AM4, AM3+, FM2, FM1',
     description: 'Basic with a small light show',
     price: 39.99, stock: 39,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FUX2005V.jpg?alt=media&token=51a56be6-3fea-4521-aac7-b8a58f9b56ad',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769851/UX2005V_yhwkzk.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -101,7 +101,7 @@ export const Coolers: Cooler[] = [
     socket: 'LGA1700, LGA1200, LGA2066, LGA2011-v3, LGA1151, LGA1150, AM4, AM3+, AM2+, FM2+, FM1',
     description: 'The basic and modest.',
     price: 54.99, stock: 25,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FCMBasic.jpg?alt=media&token=5b1b569a-f6a3-4604-af21-12272f850fc5',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769848/CMBasic_jpyuvc.jpg',
     tags: 'cooling, cooler, radiator',
   },
   {
@@ -110,7 +110,7 @@ export const Coolers: Cooler[] = [
     socket: 'LGA1700, LGA1200, LGA2066, LGA2011-v3, LGA1151, LGA1150, AM4, AM3+, AM2+, FM2+, FM1',
     description: 'The basic and modest.',
     price: 234.99, stock: 1511,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/coolers%2FKRAKEN.jpg?alt=media&token=68375b0e-6f8b-4d1c-b788-82e4852bc154',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769849/KRAKEN_epwly5.jpg',
     tags: 'cooling, cooler, radiator',
   },
 ]
@@ -125,7 +125,7 @@ export const GPUs: GPU[] = [
     rendering: 'DLSS 3, Ray Tracing', DisplayPort: 3, HDMI: 1, displays: 4,
     description: 'The best that money can buy!',
     price: 1749.99, stock: 14,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/GPUs%2FGIGABYTE4090.jpg?alt=media&token=2c819a5a-6ed4-45cf-b7b5-2b83801c66d0',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767526/GIGABYTE4090_eyjytn.jpg',
     tags: 'gpu, graphics',
   },
   {
@@ -135,7 +135,7 @@ export const GPUs: GPU[] = [
     rendering: 'DLSS 3, Ray Tracing', DisplayPort: 3, HDMI: 2, displays: 4,
     description: 'The best that money can buy!',
     price: 1967.99, stock: 16,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/GPUs%2FASUS4090.jpg?alt=media&token=8ba4a8d7-f835-455d-b367-560b9606b632',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767527/ASUS4090_urtggi.jpg',
     tags: 'gpu, graphics',
   },
   {
@@ -145,7 +145,7 @@ export const GPUs: GPU[] = [
     rendering: 'DLSS 3, Ray Tracing', DisplayPort: 3, HDMI: 1, displays: 4,
     description: 'Excellent performance for the value!',
     price: 799.99, stock: 10,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/GPUs%2FMSI4070ti.jpg?alt=media&token=293a3517-4577-4e05-b602-5a37e8a143f5',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767526/MSI4070ti_ge9h7y.jpg',
     tags: 'gpu, graphics',
   },
   {
@@ -155,7 +155,7 @@ export const GPUs: GPU[] = [
     rendering: 'DLSS, Ray Tracing', DisplayPort: 3, HDMI: 1, displays: 4,
     description: 'A budget card for the occasional player!',
     price: 239.99, stock: 5,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/GPUs%2FPNY3050.jpg?alt=media&token=8c6f3039-c461-4ade-ba79-9d6539e36386',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767527/PNY3050_tcvapg.jpg',
     tags: 'gpu, graphics',
   },
   {
@@ -165,7 +165,7 @@ export const GPUs: GPU[] = [
     rendering: 'DLSS 3, Ray Tracing', DisplayPort: 3, HDMI: 1, displays: 4,
     description: 'Excellent performance for the value!',
     price: 799.99, stock: 11,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/GPUs%2FPNY4070ti.jpg?alt=media&token=d2a152e7-eb04-4982-b60a-982628045c0c',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767526/PNY4070ti_hye2uh.jpg',
     tags: 'gpu, graphics',
   },
 ]
@@ -179,7 +179,7 @@ export const Rigs: Rig[] = [
     cooler: 'AIO TH360 ARGB',
     description: 'An EPIC gaming rig with no holds barred',
     price: 3999.99, stock: 40,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/rigs%2F6528756_sd.jpg?alt=media&token=669893ab-c82a-4160-ac46-c0687b7eafdc',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769614/6528756_sd_etzotb.jpg',
     tags: 'PC, rig, gaming, computer',
   },
   {
@@ -188,7 +188,7 @@ export const Rigs: Rig[] = [
     cooler: 'iCUE Hydro Series H60X RGB ELITE',
     description: 'A respectable mid-range gaming desktop',
     price: 1649.99, stock: 33,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/rigs%2FVENGEANCE.jpg?alt=media&token=be1dc6cd-bc93-443a-a5e0-3f6260bb0ec8',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769617/VENGEANCE_agme5v.jpg',
     tags: 'PC, rig, gaming, computer',
   },
   {
@@ -197,7 +197,7 @@ export const Rigs: Rig[] = [
     cooler: 'iCUE Hydro Series H60X RGB ELITE',
     description: 'A respectable mid-range gaming desktop',
     price: 1649.99, stock: 43,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/rigs%2FNZXT.jpg?alt=media&token=aed73175-32e0-477e-84fb-3f7bd46866bc',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769616/NZXT_ik7fz4.jpg',
     tags: 'PC, rig, gaming, computer',
   },
   {
@@ -206,7 +206,7 @@ export const Rigs: Rig[] = [
     cooler: 'Kraken Z53',
     description: 'Entry level gamer',
     price: 1649.99, stock: 11,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/rigs%2FOMEN.jpg?alt=media&token=36d97fff-486a-4d99-8130-c2ca56c710eb',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777769615/OMEN_uxxdup.jpg',
     tags: 'PC, rig, gaming, computer',
   },
 ]
@@ -221,7 +221,7 @@ export const Cases: Case[] = [
     placement: 'horizontal, vertical, wall',
     description: 'A sleek open case to showcase your gear.',
     price: 124.99, stock: 15,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/cases%2FTMTP3.jpg?alt=media&token=6207eb25-5717-4e16-aeeb-b83e2cf5b71c',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767160/TMTP3_scxepy.jpg',
     tags: 'case, chassis',
   },
   {
@@ -231,7 +231,7 @@ export const Cases: Case[] = [
     placement: 'horizontal, vertical, wall',
     description: 'A sleek transparent case to showcase your gear.',
     price: 199.99, stock: 25,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/cases%2FTMTP6.jpg?alt=media&token=6a0ff53c-b159-4889-ae4a-a9381b1fb1de',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767160/TMTP6_p6axgw.jpg',
     tags: 'case, chassis',
   },
   {
@@ -241,7 +241,7 @@ export const Cases: Case[] = [
     placement: 'horizontal',
     description: 'A sleek basic case for the minimalist.',
     price: 49.99, stock: 20,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/cases%2FTMTV.jpg?alt=media&token=95360127-9f09-4045-b070-2d020e944179',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767160/TMTV_ok21nk.jpg',
     tags: 'case, chassis',
   },
   {
@@ -251,7 +251,7 @@ export const Cases: Case[] = [
     placement: 'horizontal',
     description: 'A sleek transparent case to showcase your gear.',
     price: 94.99, stock: 35,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/cases%2FNZXTH5.jpg?alt=media&token=9ed12295-910c-4437-8362-4c50e1d975d4',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767160/NZXTH5_trjaaa.jpg',
     tags: 'case, chassis',
   },
   {
@@ -261,7 +261,7 @@ export const Cases: Case[] = [
     placement: 'horizontal',
     description: 'A sleek open case to showcase your gear.',
     price: 124.99, stock: 22,
-    image: 'https://firebasestorage.googleapis.com/v0/b/stand4-electronics.appspot.com/o/cases%2FCORSAIR400D.jpg?alt=media&token=b90cb5de-dca9-455d-b333-0b88917409a9',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777767160/CORSAIR400D_wyhcqd.jpg',
     tags: 'case, chassis',
   },
 ]
@@ -370,7 +370,7 @@ export const Mice: Mouse[] = [
     sensor: 'HERO 2',
     description: 'Ultra-lightweight 60g wireless mouse used by pro esports players worldwide.',
     price: 159.99, stock: 22,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Logitech+Superlight+2',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962489/ModelOMinus_eosejh.jpg',
     tags: 'mouse, wireless, esports, lightweight',
   },
   {
@@ -379,7 +379,7 @@ export const Mice: Mouse[] = [
     sensor: 'Focus Pro 30K',
     description: 'Ergonomic wired mouse with ultra-precise 30K DPI optical sensor.',
     price: 69.99, stock: 35,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Razer+DeathAdder+V3',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962487/DeathAdderV3_rwwg9g.jpg',
     tags: 'mouse, wired, ergonomic',
   },
   {
@@ -388,7 +388,7 @@ export const Mice: Mouse[] = [
     sensor: 'TrueMove3+',
     description: 'Dual-sensor wireless mouse with customizable weights for precision control.',
     price: 109.99, stock: 14,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=SteelSeries+Rival+650',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962488/Rival650_tlvyb8.jpg',
     tags: 'mouse, wireless, rgb, customizable',
   },
   {
@@ -397,7 +397,7 @@ export const Mice: Mouse[] = [
     sensor: 'PixArt PAW3392',
     description: 'Full-featured wireless mouse with Qi charging pad and detachable side grips.',
     price: 79.99, stock: 18,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Corsair+Dark+Core',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962489/DarkCoreRGBProSE_kz4uvk.jpg',
     tags: 'mouse, wireless, rgb, qi-charging',
   },
   {
@@ -406,7 +406,7 @@ export const Mice: Mouse[] = [
     sensor: 'Pixart 3360',
     description: 'Honeycomb shell ultra-light wired mouse — maximum airflow, minimum weight.',
     price: 44.99, stock: 40,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Glorious+Model+O',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962489/ModelOMinus_eosejh.jpg',
     tags: 'mouse, wired, lightweight, rgb, honeycomb',
   },
 ]
@@ -420,7 +420,7 @@ export const Keyboards: Keyboard[] = [
     wireless: false, rgb: true,
     description: 'Aircraft-grade aluminum frame with Cherry MX Reds and per-key RGB.',
     price: 139.99, stock: 25,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Corsair+K70+RGB',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962518/K70RGBMK2_i32nrm.jpg',
     tags: 'keyboard, mechanical, rgb, full-size',
   },
   {
@@ -429,7 +429,7 @@ export const Keyboards: Keyboard[] = [
     wireless: false, rgb: true,
     description: 'Tenkeyless mechanical with Razer Green clicky switches and Chroma RGB.',
     price: 99.99, stock: 30,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Razer+BlackWidow+V3',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962519/g915tkl_nc3q68.jpg',
     tags: 'keyboard, mechanical, rgb, tkl',
   },
   {
@@ -438,7 +438,7 @@ export const Keyboards: Keyboard[] = [
     wireless: true, rgb: true,
     description: 'Ultra-slim wireless TKL with Lightspeed technology and 40-hour battery.',
     price: 199.99, stock: 16,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Logitech+G915+TKL',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962517/BlackWidow_V3_TKL_og5byu.jpg',
     tags: 'keyboard, mechanical, wireless, rgb, slim',
   },
   {
@@ -447,7 +447,7 @@ export const Keyboards: Keyboard[] = [
     wireless: false, rgb: true,
     description: 'Adjustable actuation optical switches — customize sensitivity per key.',
     price: 169.99, stock: 12,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=SteelSeries+Apex+Pro',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962517/ApexProTKL_wbglyc.jpg',
     tags: 'keyboard, optical, rgb, tkl, adjustable',
   },
   {
@@ -456,7 +456,7 @@ export const Keyboards: Keyboard[] = [
     wireless: false, rgb: true,
     description: 'Premium hot-swappable TKL with double-shot PBT keycaps and QUACK Mechanics.',
     price: 109.99, stock: 20,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Ducky+One+3+TKL',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962516/One3TKL_kzurvt.jpg',
     tags: 'keyboard, mechanical, rgb, tkl, hot-swap',
   },
 ]
