@@ -26,7 +26,7 @@ export const CPUs: CPU[] = [
     baseClock: 3.4, boostClock: 4.9, cores: 16, threads: 32, generation: 4, socket: 'AM4',
     description: 'A 3.4GHz 16-Core powerhouse for any occasion',
     price: 444.99, stock: 36,
-    image: '',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777768050/R9-5950x_bgepym.jpg',
     tags: 'cpu, processor, chip',
   },
   {
@@ -274,7 +274,7 @@ export const MemoryRAM: Memory[] = [
     capacity: 16, speed: 3200, type: 'DDR4', modules: '2x8GB', latency: 'CL16', lighting: 'none',
     description: 'Low-profile DDR4-3200 kit, ideal for tight builds and ITX cases.',
     price: 49.99, stock: 42,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Corsair+Vengeance+LPX',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003220/vengeanceLPX16_ix0avg.jpg',
     tags: 'ram, memory, ddr4',
   },
   {
@@ -282,7 +282,7 @@ export const MemoryRAM: Memory[] = [
     capacity: 32, speed: 6000, type: 'DDR5', modules: '2x16GB', latency: 'CL30', lighting: 'RGB',
     description: 'Next-gen DDR5-6000 with striking RGB for Intel 12th/13th and AMD Ryzen 7000 builds.',
     price: 129.99, stock: 19,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=G.Skill+Trident+Z5',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003219/TridentZ532_vhxh3d.webp',
     tags: 'ram, memory, ddr5, rgb',
   },
   {
@@ -290,7 +290,7 @@ export const MemoryRAM: Memory[] = [
     capacity: 16, speed: 3600, type: 'DDR4', modules: '2x8GB', latency: 'CL17', lighting: 'none',
     description: 'Plug-and-play DDR4-3600 with automatic overclocking via Intel XMP and AMD EXPO.',
     price: 44.99, stock: 55,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Kingston+Fury+Beast',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003218/FuryBeast16gb_fwecz1.webp',
     tags: 'ram, memory, ddr4',
   },
   {
@@ -298,7 +298,7 @@ export const MemoryRAM: Memory[] = [
     capacity: 32, speed: 3200, type: 'DDR4', modules: '2x16GB', latency: 'CL16', lighting: 'RGB',
     description: 'Reliable DDR4-3200 kit with subtle RGB and tight CL16 timings.',
     price: 89.99, stock: 30,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Crucial+Ballistix',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003218/Ballistix32gb_h5abdc.jpg',
     tags: 'ram, memory, ddr4, rgb',
   },
   {
@@ -306,7 +306,7 @@ export const MemoryRAM: Memory[] = [
     capacity: 64, speed: 3600, type: 'DDR4', modules: '2x32GB', latency: 'CL18', lighting: 'none',
     description: 'Maximum DDR4 capacity for workstations, content creation, and heavy multitasking.',
     price: 149.99, stock: 12,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=G.Skill+Ripjaws+V',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003219/RipjawsV64gb_aryp68.jpg',
     tags: 'ram, memory, ddr4',
   },
 ]
@@ -320,7 +320,7 @@ export const Monitors: Monitor[] = [
     responseTime: 1, hdmiPorts: 1, displayPorts: 1, curved: false, aspectRatio: '16:9',
     description: 'Fast 165Hz QHD IPS panel with Nano IPS technology for wide color coverage.',
     price: 299.99, stock: 20,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=LG+27GP850-B',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962550/27GP850-B_cdrzjv.jpg',
     tags: 'monitor, display, 1440p, ips',
   },
   {
@@ -329,7 +329,7 @@ export const Monitors: Monitor[] = [
     responseTime: 1, hdmiPorts: 1, displayPorts: 1, curved: true, aspectRatio: '16:9',
     description: '1000R curved VA panel with deep blacks and immersive gaming experience.',
     price: 279.99, stock: 17,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Samsung+Odyssey+G5',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962551/odysseyg5_27_awx5qp.jpg',
     tags: 'monitor, display, 1440p, curved, va',
   },
   {
@@ -338,7 +338,7 @@ export const Monitors: Monitor[] = [
     responseTime: 0.2, hdmiPorts: 1, displayPorts: 1, curved: false, aspectRatio: '16:9',
     description: 'World\'s fastest 540Hz IPS monitor, built for competitive esports.',
     price: 699.99, stock: 8,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=ASUS+ROG+PG248QP',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778003150/ROGSwiftPG248QP_y3ltyg.jpg',
     tags: 'monitor, display, 1080p, 540hz, esports',
   },
   {
@@ -347,7 +347,7 @@ export const Monitors: Monitor[] = [
     responseTime: 5, hdmiPorts: 1, displayPorts: 1, curved: false, aspectRatio: '16:9',
     description: 'Professional 4K IPS with USB-C 90W charging — the ultimate productivity display.',
     price: 649.99, stock: 11,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=Dell+U3223QE',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962552/U3223QE_j67itk.jpg',
     tags: 'monitor, display, 4k, professional',
   },
   {
@@ -356,8 +356,26 @@ export const Monitors: Monitor[] = [
     responseTime: 1, hdmiPorts: 2, displayPorts: 1, curved: false, aspectRatio: '16:9',
     description: 'Budget-friendly 165Hz QHD IPS — great value for the competitive gamer.',
     price: 219.99, stock: 28,
-    image: 'https://placehold.co/400x300/0f172a/3b82f6?text=AOC+Q27G2S',
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1777962549/Q27G2S_wnikb8.jpg',
     tags: 'monitor, display, 1440p, ips, budget',
+  },
+  {
+    id: 47, category: 'Monitors', brand: 'Samsung', model: 'Odyssey Ark 55"',
+    size: 55, resolution: '3840x2160 (4K UHD)', refreshRate: 165, panelType: 'VA',
+    responseTime: 1, hdmiPorts: 4, displayPorts: 1, curved: true, aspectRatio: '16:9',
+    description: 'Massive 55" 4K 1000R curved VA display with Ark Dial controller and Multi View for the ultimate cockpit setup.',
+    price: 1499.99, stock: 10,
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778002963/ayssey_ark_pgfhw2.jpg',
+    tags: 'monitor, display, 4k, curved, samsung, ark, va',
+  },
+  {
+    id: 48, category: 'Monitors', brand: 'Samsung', model: 'Odyssey Neo G9 G95NC',
+    size: 49, resolution: '5120x1440 (Dual QHD)', refreshRate: 240, panelType: 'VA',
+    responseTime: 1, hdmiPorts: 2, displayPorts: 1, curved: true, aspectRatio: '32:9',
+    description: 'Ultra-wide 49" 240Hz Dual QHD Mini LED curved panel with 2000-nit peak brightness and Quantum Matrix Technology.',
+    price: 1299.99, stock: 8,
+    image: 'https://res.cloudinary.com/dvrvxd0ag/image/upload/v1778002963/g9_57__iaadmt.jpg',
+    tags: 'monitor, display, ultrawide, curved, samsung, neo g9, 240hz, mini-led',
   },
 ]
 

@@ -97,8 +97,9 @@ function getSpecs(product: Product): [string, string | number][] {
   }
 }
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const product = getProductById(Number(params.id))
+export default async function ProductDetailPage({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params
+  const product = getProductById(Number(id))
   if (!product) notFound()
 
   const specs = getSpecs(product)

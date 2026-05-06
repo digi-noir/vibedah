@@ -1,19 +1,28 @@
 import { allProducts, getProductsByCategory } from '@/data/products'
 import ProductCard from '@/components/ProductCard'
+import SearchBar from '@/components/SearchBar'
 import { CATEGORY_LABELS, ProductCategory } from '@/types'
 import Link from 'next/link'
 
 const CATEGORIES: ProductCategory[] = ['CPUs', 'GPUs', 'Memory', 'Monitors', 'Rigs', 'cases', 'Coolers', 'Mice', 'Keyboards']
 
 interface Props {
-  searchParams: { category?: string; sort?: string }
+  searchParams: Promise<{ category?: string; sort?: string; q?: string }>
 }
 
-export default function ProductsPage({ searchParams }: Props) {
-  const activeCategory = searchParams.category as ProductCategory | undefined
-  const sort = searchParams.sort ?? 'default'
+export default async function ProductsPage({ searchParams }: Props) {
+  const params = await searchParams
+  const activeCategory = params.category as ProductCategory | undefined
+  const sort = params.sort ?? 'default'
+  const query = params.q?.toLowerCase().trim() ?? ''
 
   let products = activeCategory ? getProductsByCategory(activeCategory) : allProducts
+
+  if (query) {
+    products = products.filter(p =>
+      `${p.brand} ${p.model} ${p.description} ${p.tags}`.toLowerCase().includes(query)
+    )
+  }
 
   if (sort === 'price-asc') products = [...products].sort((a, b) => a.price - b.price)
   if (sort === 'price-desc') products = [...products].sort((a, b) => b.price - a.price)
@@ -21,10 +30,13 @@ export default function ProductsPage({ searchParams }: Props) {
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-        {activeCategory ? CATEGORY_LABELS[activeCategory] : 'All Products'}
-        <span className="text-gray-400 dark:text-slate-500 text-lg font-normal ml-3">({products.length})</span>
-      </h1>
+      <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+        <h1 className="text-3xl font-bold text-gray-900 dark:text-white">
+          {activeCategory ? CATEGORY_LABELS[activeCategory] : 'All Products'}
+          <span className="text-gray-400 dark:text-slate-500 text-lg font-normal ml-3">({products.length})</span>
+        </h1>
+        <SearchBar defaultValue={params.q ?? ''} />
+      </div>
 
       {/* Category filter */}
       <div className="flex flex-wrap gap-2 mb-6">
