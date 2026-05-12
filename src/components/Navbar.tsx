@@ -2,14 +2,13 @@
 
 import Link from 'next/link'
 import { useCart } from './CartProvider'
-import { useTheme } from './ThemeProvider'
 import { CATEGORY_LABELS, ProductCategory } from '@/types'
+import ThemeSelector from './ThemeSelector'
 
 const NAV_CATEGORIES: ProductCategory[] = ['CPUs', 'GPUs', 'Memory', 'Monitors', 'Rigs', 'cases', 'Coolers', 'Mice', 'Keyboards']
 
 export default function Navbar() {
   const { count } = useCart()
-  const { theme, toggle } = useTheme()
 
   return (
     <header className="sticky top-0 z-50 bg-white dark:bg-slate-950 border-b border-gray-200 dark:border-slate-800">
@@ -44,14 +43,7 @@ export default function Navbar() {
             Login
           </Link>
 
-          {/* Theme toggle */}
-          <button
-            onClick={toggle}
-            aria-label="Toggle theme"
-            className="p-2 rounded-lg bg-gray-100 hover:bg-gray-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-gray-600 dark:text-slate-400 transition-colors text-base leading-none"
-          >
-            {theme === 'dark' ? '☀️' : '🌙'}
-          </button>
+          <ThemeSelector />
 
           <Link
             href="/cart"

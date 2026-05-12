@@ -2,6 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ==========================================================================
+   Theme accent color variables
+   ========================================================================== */
+:root {
+  --brand-50: #eff6ff;
+  --brand-400: #60a5fa;
+  --brand-500: #3b82f6;
+  --brand-600: #2563eb;
+  --brand-700: #1d4ed8;
+}
+
+[data-theme="cyberpunk"] {
+  --brand-50: #fefce8;
+  --brand-400: #facc15;
+  --brand-500: #eab308;
+  --brand-600: #ca8a04;
+  --brand-700: #a16207;
+}
+
+[data-theme="synthwave"] {
+  --brand-50: #fdf2f8;
+  --brand-400: #f472b6;
+  --brand-500: #ec4899;
+  --brand-600: #db2777;
+  --brand-700: #be185d;
+}
+
+[data-theme="midnight"] {
+  --brand-50: #ecfeff;
+  --brand-400: #22d3ee;
+  --brand-500: #06b6d4;
+  --brand-600: #0891b2;
+  --brand-700: #0e7490;
+}
+
+[data-theme="crimson"] {
+  --brand-50: #fff1f2;
+  --brand-400: #fb7185;
+  --brand-500: #f43f5e;
+  --brand-600: #e11d48;
+  --brand-700: #be123c;
+}
+
+/* ==========================================================================
+   Per-theme dark background overrides (non-layered to beat @layer utilities)
+   ========================================================================== */
+
+/* Cyberpunk: near-black */
+html[data-theme="cyberpunk"].dark body,
+html[data-theme="cyberpunk"].dark .dark\:bg-slate-950 { background-color: #080808; }
+html[data-theme="cyberpunk"].dark .dark\:bg-slate-900 { background-color: #111111; }
+html[data-theme="cyberpunk"].dark .dark\:bg-slate-800 { background-color: #1c1c1c; }
+html[data-theme="cyberpunk"].dark .dark\:border-slate-800 { border-color: #2a2a2a; }
+html[data-theme="cyberpunk"].dark .dark\:border-slate-700 { border-color: #333333; }
+html[data-theme="cyberpunk"].dark .dark\:to-blue-950 {
+  --tw-gradient-to: #1a1400 var(--tw-gradient-to-position);
+}
+
+/* Synthwave: purple-tinted dark */
+html[data-theme="synthwave"].dark body,
+html[data-theme="synthwave"].dark .dark\:bg-slate-950 { background-color: #0e0818; }
+html[data-theme="synthwave"].dark .dark\:bg-slate-900 { background-color: #160d26; }
+html[data-theme="synthwave"].dark .dark\:bg-slate-800 { background-color: #211738; }
+html[data-theme="synthwave"].dark .dark\:border-slate-800 { border-color: #2e1d50; }
+html[data-theme="synthwave"].dark .dark\:border-slate-700 { border-color: #3d2668; }
+html[data-theme="synthwave"].dark .dark\:to-blue-950 {
+  --tw-gradient-to: #2a0840 var(--tw-gradient-to-position);
+}
+
+/* Midnight: deep navy */
+html[data-theme="midnight"].dark body,
+html[data-theme="midnight"].dark .dark\:bg-slate-950 { background-color: #040e1f; }
+html[data-theme="midnight"].dark .dark\:bg-slate-900 { background-color: #071a35; }
+html[data-theme="midnight"].dark .dark\:bg-slate-800 { background-color: #0c2448; }
+html[data-theme="midnight"].dark .dark\:border-slate-800 { border-color: #103060; }
+html[data-theme="midnight"].dark .dark\:border-slate-700 { border-color: #163c78; }
+html[data-theme="midnight"].dark .dark\:to-blue-950 {
+  --tw-gradient-to: #020b18 var(--tw-gradient-to-position);
+}
+
+/* Crimson: dark with red tint */
+html[data-theme="crimson"].dark body,
+html[data-theme="crimson"].dark .dark\:bg-slate-950 { background-color: #0f0408; }
+html[data-theme="crimson"].dark .dark\:bg-slate-900 { background-color: #1a080e; }
+html[data-theme="crimson"].dark .dark\:bg-slate-800 { background-color: #261018; }
+html[data-theme="crimson"].dark .dark\:border-slate-800 { border-color: #381622; }
+html[data-theme="crimson"].dark .dark\:border-slate-700 { border-color: #4a1e2e; }
+html[data-theme="crimson"].dark .dark\:to-blue-950 {
+  --tw-gradient-to: #1a040a var(--tw-gradient-to-position);
+}
+
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
 @layer base {
   body {
     @apply bg-gray-50 text-gray-900 dark:bg-slate-950 dark:text-white antialiased;

@@ -1,23 +1,42 @@
-import Link from 'next/link'
-import { allProducts } from '@/data/products'
-import ProductCard from '@/components/ProductCard'
-import { CATEGORY_LABELS, ProductCategory } from '@/types'
+import Link from "next/link";
+// import { allProducts } from "@/data/products";
+import ProductCard from "@/components/ProductCard";
+import { CATEGORY_LABELS, ProductCategory } from "@/types";
+import { supabase } from "@/lib/supabase";
 
 const CATEGORY_ICONS: Record<ProductCategory, string> = {
-  CPUs: '🔲',
-  GPUs: '🎮',
-  Coolers: '❄️',
-  Rigs: '🖥️',
-  cases: '📦',
-  Memory: '🧩',
-  Monitors: '🖥️',
-  Mice: '🖱️',
-  Keyboards: '⌨️',
-}
+  CPUs: "🔲",
+  GPUs: "🎮",
+  Coolers: "❄️",
+  Rigs: "🖥️",
+  cases: "📦",
+  Memory: "🧩",
+  Monitors: "🖥️",
+  Mice: "🖱️",
+  Keyboards: "⌨️",
+};
 
-const CATEGORIES: ProductCategory[] = ['CPUs', 'GPUs', 'Memory', 'Monitors', 'Rigs', 'cases', 'Coolers', 'Mice', 'Keyboards']
+const CATEGORIES: ProductCategory[] = [
+  "CPUs",
+  "GPUs",
+  "Memory",
+  "Monitors",
+  "Rigs",
+  "cases",
+  "Coolers",
+  "Mice",
+  "Keyboards",
+];
 
-const featured = allProducts.filter(p => [11, 7, 28, 32, 37, 42, 23, 18].includes(p.id))
+const query = await supabase.from("products").select();
+
+const { data: products } = query;
+
+const itemList = products ?? [];
+
+const featured = itemList.filter((p) =>
+  [11, 7, 28, 32, 37, 42, 23, 18].includes(p.id),
+);
 
 export default function HomePage() {
   return (
@@ -34,7 +53,8 @@ export default function HomePage() {
             <span className="text-brand-500"> PC</span>
           </h1>
           <p className="text-gray-500 dark:text-slate-400 text-lg mb-8 max-w-xl mx-auto">
-            Shop top-tier CPUs, GPUs, Memory, Monitors, Peripherals, and pre-built gaming rigs — all in one place.
+            Shop top-tier CPUs, GPUs, Memory, Monitors, Peripherals, and
+            pre-built gaming rigs — all in one place.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link
@@ -55,9 +75,11 @@ export default function HomePage() {
 
       {/* Categories */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Shop by Category</h2>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
+          Shop by Category
+        </h2>
         <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3">
-          {CATEGORIES.map(cat => (
+          {CATEGORIES.map((cat) => (
             <Link
               key={cat}
               href={`/products?category=${cat}`}
@@ -75,13 +97,18 @@ export default function HomePage() {
       {/* Featured Products */}
       <section className="max-w-7xl mx-auto px-4 pb-16">
         <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Featured Products</h2>
-          <Link href="/products" className="text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 text-sm transition-colors">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+            Featured Products
+          </h2>
+          <Link
+            href="/products"
+            className="text-brand-600 dark:text-brand-400 hover:text-brand-700 dark:hover:text-brand-300 text-sm transition-colors"
+          >
             View all →
           </Link>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {featured.map(product => (
+          {featured.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
@@ -91,18 +118,26 @@ export default function HomePage() {
       <section className="border-t border-gray-200 dark:border-slate-800 py-12 px-4">
         <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           {[
-            { icon: '🚚', title: 'Free Shipping', desc: 'On orders over $75' },
-            { icon: '🔒', title: 'Secure Checkout', desc: 'Powered by Stripe' },
-            { icon: '↩️', title: '30-Day Returns', desc: 'Hassle-free returns' },
+            { icon: "🚚", title: "Free Shipping", desc: "On orders over $75" },
+            { icon: "🔒", title: "Secure Checkout", desc: "Powered by Stripe" },
+            {
+              icon: "↩️",
+              title: "30-Day Returns",
+              desc: "Hassle-free returns",
+            },
           ].map(({ icon, title, desc }) => (
             <div key={title}>
               <div className="text-3xl mb-2">{icon}</div>
-              <h3 className="text-gray-900 dark:text-white font-semibold mb-1">{title}</h3>
-              <p className="text-gray-500 dark:text-slate-400 text-sm">{desc}</p>
+              <h3 className="text-gray-900 dark:text-white font-semibold mb-1">
+                {title}
+              </h3>
+              <p className="text-gray-500 dark:text-slate-400 text-sm">
+                {desc}
+              </p>
             </div>
           ))}
         </div>
       </section>
     </div>
-  )
+  );
 }

@@ -20,9 +20,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* Prevents flash of wrong theme on initial load */}
         <script dangerouslySetInnerHTML={{ __html: `
           try {
+            var dark = ['dark','cyberpunk','synthwave','midnight','crimson'];
             var s = localStorage.getItem('vibedah_theme');
             var p = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-            if ((s || p) === 'dark') document.documentElement.classList.add('dark');
+            var t = s || p;
+            document.documentElement.setAttribute('data-theme', t);
+            if (dark.indexOf(t) !== -1) document.documentElement.classList.add('dark');
           } catch(e) {}
         `}} />
       </head>
