@@ -2,6 +2,7 @@
   "name": "vibeDAH",
   "version": "0.1.0",
   "private": true,
+   "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -29,4 +30,7 @@
     "tsx": "^4.21.0",
     "typescript": "^5.4.5"
   }
+  
+ 
+
 }
